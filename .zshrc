@@ -106,7 +106,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfiles-save="dotfiles add $HOME/.zshrc && dotfiles add $HOME/.config/alacritty && 
 	dotfiles add $HOME/.config/dunst && dotfiles add $HOME/.config/i3 &&
 	dotfiles add $HOME/.config/i3status && dotfiles add $HOME/.config/neofetch &&
-	dotfiles add $HOME/.config/nvim && dotfiles commit && dotfiles push"
+	dotfiles add $HOME/.config/nvim && dotfiles commit -m "Some changes" && dotfiles push"
 
 neofetch
 eval "$(zoxide init zsh)"
