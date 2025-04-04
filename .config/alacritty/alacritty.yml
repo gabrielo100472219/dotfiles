@@ -3,7 +3,7 @@ window:
     x: 5
     y: 5
 
-  opacity: 0.9
+  opacity: 0.92
 
 font:
   size: 7
