@@ -1,13 +1,15 @@
 window:
   padding:
     x: 5
-    y: 5
+    y: 7
 
   opacity: 0.92
 
 font:
   size: 7
-
+  normal: 
+    family: "JetBrainsMono Nerd Font"
+    style: "Regular" 
 colors:
   name: Monokai (dark)
   author: Chris Kempson
