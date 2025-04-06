@@ -18,7 +18,7 @@ require("nvim-options")
 
 require("lazy").setup({
     spec = {
-      { import = "plugins" }, 
+      { import = "plugins" },
     },
     install = {
       colorscheme = { "cyberdream" },
@@ -27,6 +27,5 @@ require("lazy").setup({
       enabled = true,
     }
   })
-  
+
 vim.cmd.colorscheme("cyberdream")
-  
