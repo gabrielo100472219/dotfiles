@@ -68,7 +68,7 @@ bindsym $mod+l focus right
 
 # move focused window
 bindsym $mod+Shift+h move left 
-bindsym $mod+Shift+j move down 
+
 bindsym $mod+Shift+k move up 
 bindsym $mod+Shift+l move right
 
@@ -200,12 +200,12 @@ bindsym XF86AudioPrev exec playerctl previous
 # wallpaper
 exec --no-startup-id feh --bg-scale /home/gabrielo/Pictures/wallpaper/dune.jpg
 
-#gaps inner 6px
-#gaps outer 1px
+gaps inner 6px
+gaps outer 1px
 # client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
 
 # Remove title from windows
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 # Change border color
 client.focused #ffcc33 #ffcc33 #000000 #000000
@@ -223,10 +223,8 @@ exec --no-startup-id xinput set-prop 12 "libinput Scrolling Pixel Distance" 50
 exec --no-startup-id xinput set-prop 12 "libinput Natural Scrolling Enabled" 1 
 exec --no-startup-id xinput set-prop 12 "libinput Tapping Enabled" 1 
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080
+exec --no-startup-id rclone mount gdrive: ~/googleDrive --vfs-cache-mode writes
+exec --no-startup-id picom
 exec --no-startup-id setxkbmap -option "caps:ctrl_modifier,grp:shifts_toggle"
 exec --no-startup-id killall xcape
 exec --no-startup-id xcape -e 'Caps_Lock=Escape'
-exec --no-startup-id rclone mount gdrive: ~/googleDrive --vfs-cache-mode writes
-exec --no-startup-id compton
-
-

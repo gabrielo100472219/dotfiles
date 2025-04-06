@@ -18,14 +18,12 @@ require("nvim-options")
 
 require("lazy").setup({
     spec = {
-      { import = "plugins" },
+        { import = "plugins" },
     },
-    install = {
-      colorscheme = { "cyberdream" },
-    },
+    install = {},
     checker = {
-      enabled = true,
+        enabled = true,
     }
-  })
+})
 
-vim.cmd.colorscheme("cyberdream")
+vim.wo.relativenumber = true
