@@ -28,3 +28,6 @@ require("lazy").setup({
 
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { noremap = true })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { noremap = true })
+
