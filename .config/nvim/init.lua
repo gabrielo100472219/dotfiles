@@ -26,4 +26,5 @@ require("lazy").setup({
     }
 })
 
-vim.wo.relativenumber = true
+vim.opt.number = true
+vim.opt.relativenumber = true
