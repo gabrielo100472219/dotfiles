@@ -16,7 +16,6 @@ return {
                     "dockerls",
                     "ast_grep",
                     "biome",
-                    "ltex",
                 }
             })
         end
@@ -31,7 +30,6 @@ return {
             lspconfig.dockerls.setup({})
             lspconfig.ast_grep.setup({})
             lspconfig.biome.setup({})
-            lspconfig.ltex.setup({})
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
