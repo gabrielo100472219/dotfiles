@@ -214,8 +214,6 @@ hide_edge_borders smart
 
 # Custom bindings
 bindsym $mod+f exec firefox
-bindsym $mod+c exec code
-bindsym $mod+m exec marktext
 
 # Execute at startup:
 exec --no-startup-id xinput set-prop 12 "libinput Scrolling Pixel Distance" 50 

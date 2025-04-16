@@ -108,10 +108,11 @@ alias dotfiles-save="dotfiles add $HOME/.zshrc && dotfiles add $HOME/.config/ala
 	dotfiles add $HOME/.config/i3status && dotfiles add $HOME/.config/neofetch &&
 	dotfiles add $HOME/.config/nvim && dotfiles commit && dotfiles push"
 
+alias capesc="xcape -e 'Caps_Lock=Escape'"
+
 neofetch
 eval "$(zoxide init zsh)"
 
 # export paths
-export PATH=$PATH:/snap/bin
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
