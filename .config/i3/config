@@ -221,8 +221,8 @@ exec --no-startup-id xinput set-prop 12 "libinput Natural Scrolling Enabled" 1
 exec --no-startup-id xinput set-prop 12 "libinput Tapping Enabled" 1 
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080
 exec --no-startup-id rclone mount gdrive: ~/googleDrive --vfs-cache-mode writes
-exec --no-startup-id picom
+exec_always --no-startup-id picom
 exec --no-startup-id setxkbmap -option "caps:ctrl_modifier,grp:shifts_toggle"
-exec --no-startup-id killall xcape
-exec --no-startup-id xcape -e 'Caps_Lock=Escape'
+exec_always --no-startup-id killall xcape
+exec_always --no-startup-id xcape -e 'Caps_Lock=Escape'
 exec_always --no-startup-id autotiling

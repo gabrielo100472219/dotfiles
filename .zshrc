@@ -112,6 +112,11 @@ alias dotfiles-save="dotfiles add $HOME/.zshrc &&
 	dotfiles add $HOME/.config/nvim && 
 	dotfiles add $HOME/.config/picom && 
 
+    dotfiles add $HOME/.config/setup &&
+
+    dotfiles add $HOME/Pictures/wallpaper &&
+
+
     dotfiles commit && dotfiles push"
 
 alias capesc="xcape -e 'Caps_Lock=Escape'"

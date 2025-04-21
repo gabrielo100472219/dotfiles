@@ -16,20 +16,26 @@ return {
                     "dockerls",
                     "ast_grep",
                     "biome",
+                    "rust_analyzer",
                 }
             })
         end
     },
     {
         "neovim/nvim-lspconfig",
+        dependencies = {
+            'saghen/blink.cmp'
+        },
         config = function()
+            local capabilities = require('blink.cmp').get_lsp_capabilities()
             local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({})
+            lspconfig.lua_ls.setup({ capabilities = capabilities })
             lspconfig.clangd.setup({})
             lspconfig.cmake.setup({})
             lspconfig.dockerls.setup({})
             lspconfig.ast_grep.setup({})
             lspconfig.biome.setup({})
+            lspconfig.rust_analyzer.setup({})
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
