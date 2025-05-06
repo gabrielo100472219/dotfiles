@@ -17,6 +17,7 @@ return {
                     "ast_grep",
                     "biome",
                     "rust_analyzer",
+                    "pyright",
                 }
             })
         end
@@ -36,6 +37,7 @@ return {
             lspconfig.ast_grep.setup({})
             lspconfig.biome.setup({})
             lspconfig.rust_analyzer.setup({})
+            lspconfig.pyright.setup({})
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
