@@ -17,7 +17,7 @@ return {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
     },
 
-    enabled = function() return not vim.tbl_contains({ "markdown" }, vim.bo.filetype) end,
+    enabled = function() return not vim.tbl_contains({ "markdown", "text", "" }, vim.bo.filetype) end,
 
     -- (Default) Rust fuzzy matcher for typo resistance and significantly better performance
     -- You may use a lua implementation instead by using `implementation = "lua"` or fallback to the lua implementation,
