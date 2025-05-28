@@ -204,7 +204,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym Print exec flameshot gui -c
 
 # wallpaper
-exec --no-startup-id feh --bg-scale /home/gabrielo/Pictures/wallpaper/way_of_kings.jpg
+exec_always --no-startup-id feh --bg-scale /home/gabrielo/Pictures/wallpaper/way_of_kings.jpg
 
 gaps inner 6px
 gaps outer 1px
